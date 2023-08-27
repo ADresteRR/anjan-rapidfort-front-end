@@ -4,6 +4,8 @@ var fileInput = document.getElementById("file-input");
 // container where result would append
 var containerDiv = document.getElementsByClassName("container")[0];
 
+const API_URL = "https://rapidfort-back-end-production.up.railway.app/upload"
+
 // create table form the json file return from api
 function createTable(jsonObject) {
     // Create a table element
@@ -74,7 +76,7 @@ fileInput.addEventListener("change", function () {
     formData.append("file", file);
 
     //making api call
-    fetch("http://localhost:3000/upload", {
+    fetch(API_URL, {
         method: "POST",
         body: formData
     })
