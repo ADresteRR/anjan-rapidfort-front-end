@@ -1,3 +1,4 @@
+/* make the site visually appealing by styling table */
 body {
 
     display: flex;
@@ -18,6 +19,12 @@ body {
 }
 
 #file-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 5px 1px #969696;
+    padding: 10px;
+    width: 50%;
     font-size: 20px;
     position: fixed; 
     top: 0;
@@ -26,12 +33,14 @@ body {
 }
 
 table {
+
     top:10%;
     border: 1px solid black;
     border-collapse: collapse;
     width: 80%;
     height: 50vh;
     overflow: auto; 
+        
 }
 
 th, td {
